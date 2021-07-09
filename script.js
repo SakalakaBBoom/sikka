@@ -1,5 +1,5 @@
 let clickBtn = document.querySelector('button');
 clickBtn.addEventListener('click', showMsg);
 function showMsg(){
-    alert("Congratulations! You are about to hack ");
+    alert("Confirm before proceed, it seems unethical elements has access to you. ");
 }
