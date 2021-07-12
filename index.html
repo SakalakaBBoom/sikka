@@ -1,67 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Harkat</title>
-    <style>
-        button{
-
-cursor: pointer;
-font-family: 'Times New Roman', Times, serif;
-background-color:#b3b3b3;
-border: 2px solid red;
-font-size: 50px;
-display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-
-}
-button:hover{
-
-    background-color: #000000;
-    color: #004d99;
-    border-radius: 50px;
-    transition: 0.6s;
-}
-h1{
-color: #fff;
-font-size: 50px;
-font-weight: 500;
-text-align: center;
-animation: blinker 1s linear infinite;
-}
-body{
-    background-color: black;
-
-}
-img{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
- width: 30%;
-    
-}
-@keyframes blinker {
-  50% { opacity: 0; }
-}
-@keyframes blin {
-  50% { opacity: 0; }
-}
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Join Us</title>
 </head>
+<style>* {
+  margin: 0;
+  padding: 0;
+  border-size: border-box;
+}
+
+html, body {
+ 
+  background-image:linear-gradient(to right, #ff6e7f, #bfe9ff);
+  font-family: 'Balsamiq Sans', sans-serif;
+  zoom: 80%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 70%;
+  padding: 30px 90px 90px 90px;
+  margin-top:80px ;
+  border: 6px solid #66ffff;
+  box-shadow: 20px 20px 0 #00cccc;
+  border-radius: 15px 50px;
+  position: relative;
+}
+
+.card h2 {
+  color: #003333;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+span{
+    color: #b30000;
+    font-style: italic;
+}
+
+.card .row {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid: auto / auto auto;
+  grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
+  grid-gap: 30px;
+}
+
+.card .row .col {
+  position: relative;
+  width: 100%;
+  margin: 30px 20px 40px 0;
+  transition: 0.5s;
+}
+
+.card .row .form-group {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #003333;
+}
+
+.card .row .form-group input,
+.card .row .form-group textarea {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  background: #ccffff;
+  outline: none;
+  font-size: 24px;
+  padding: 10px 0 10px 20px;
+  border: 5px solid #66ffff;
+  box-shadow: 10px 10px 0 #00cccc ;
+  color: #003333;
+  border-radius: 15px 50px;
+}
+
+.card .row .form-group label {
+  line-height: 40px;
+  color: #003333;
+  font-weight: 900;
+  font-size: 30px;
+  margin: 0 0 0 30px;
+  display: block;
+  pointer-events: none;
+}
+
+.row .col:nth-child(6) {
+  margin-top: 64px;
+}
+
+.card .row .form-group input:focus,
+.card .row .form-group textarea:focus {
+  border: 5px solid #003333;
+  transition: all 0.5s;
+}
+
+.card .row input[type="submit"] {
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  height: 100%;
+  width: 50%;
+  cursor: pointer;
+  outline: none;
+  background: #b30000;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 45px;
+  transition: all 0.4s;
+}
+
+.card .row input[type="submit"]:hover {
+  border: 5px solid rgba(255, 255, 255, 1);
+  background-color: #269900;
+  color: #ffffff;
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 900px) {
+  .card .row {
+    grid-template-columns: repeat(auto-fit,minmax(70%, 1fr));
+  }
+  
+  .card {
+    padding: 20px;
+  }
+  
+  .card h2 {
+    font-size: 34px;
+  }
+  
+  .card .row input[type="submit"] {
+    width: 100%;
+  }
+}</style>
 <body>
-    <h1>ARE YOU READY ?</h1>
-    
-    <img src="hack.png">
-    <br>
-    <br>
-    <br>
-    <button>Click here!</button>
-    <script src="script.js"></script>
-    
+  <div class="card">
+    <h2>Join Us-<span>Catching Miles</span></h2>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text">
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="form-group">
+          <label>Surname</label>
+          <input type="text">
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="text">
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label>Phone No.</label>
+          <input type="text">
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label>Date Of Birth</label>
+          <input type="date" id="Date Of Birth" name="Date Of Birth">
+        </div>
+      </div>
+  
+      
+  
+      <div class="col">
+        <div class="form-group">
+          <label>State</label>
+          
+          <input type="text">
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label>District</label>
+          
+          <input type="text">
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label>Occupation</label>
+          
+          <input type="text"> 
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label>Attach the link of your creativity</label>
+          
+          <input type="text"> 
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label>Preference in type of Photography</label>
+          <input type="text">
+          
+        </div>
+      </div>
+  
+      <div class="col">
+        <input type="submit" value="Submit">
+      </div>
+    </div>
+  </div>
 </body>
 </html>
