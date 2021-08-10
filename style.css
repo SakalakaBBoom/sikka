@@ -60,3 +60,37 @@ h2{
       color: #ff9900;
       margin-top: -100px;
   }
+  .low a{
+    text-decoration: none;
+    color: #4d4d4d;
+    font-size: 16px;
+    margin: 15px;
+}
+.low{
+    text-align: center;
+}
+.low .disc{
+    text-align: center;
+    color: #4d4d4d;
+    font-size: 13px;
+}
+.social{
+    margin-left: 590px;
+    
+    
+}
+.social a{
+    margin: 10px;
+    
+}
+.social a:hover i{
+    transform: scale(1.4);
+    transition: .4s;
+    
+}
+.fa-facebook-official{color:#3b5998;}
+.fa-instagram{color: #E1306C;}
+.fa-twitter{color: #1DA1F2;}
+.fa-whatsapp{color: #25d366;}
+.fa-envelope{color: #BB001B;}
+.fa-youtube-play{color: #ff0000;}
