@@ -60,6 +60,15 @@ h2{
       color: #ff9900;
       margin-top: -100px;
   }
+  h3{
+      color: #000080;
+      font-size: 40px;
+text-align: center;
+  }
+  h4{
+      color: #ff9900;
+      font-size: 28px;
+  }
   .low a{
     text-decoration: none;
     color: #4d4d4d;
