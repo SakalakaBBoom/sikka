@@ -48,6 +48,10 @@ h2{
     text-align: left;
     padding: 8px;
   }
+  th{
+      color: #000080;
+      font-size: 28px;
+  }
   
   tr:nth-child(even) {
     background-color: #ddd;
