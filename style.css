@@ -1,3 +1,6 @@
+body{
+    background-color:#e6f2ff ;
+}
 .symbols{
     display: flex;
     
@@ -67,7 +70,7 @@ h2{
   }
   
   tr:nth-child(even) {
-    background-color: #ddd;
+    background-color: #fff;
   }
 .names td img{
       color: #ff9900;
